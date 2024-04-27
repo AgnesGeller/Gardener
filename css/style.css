@@ -22,7 +22,7 @@ img {
 }
 
 section {
-    padding-top: 80px;
+    padding-top: 120px;
     padding-bottom: 80px;
     z-index: 2;
     position: relative;
@@ -68,21 +68,6 @@ section {
 .btn:hover {
     color: #fff;
     transform: translateY(-5px);
-}
-
-.video-btn {
-    width: 60px;
-    height:60px;
-    background: linear-gradient(to right,#00e0fe, #1107fe);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color:#fff;
-    border-radius: 100px;
-}
-
-.video-btn i {
-    font-size: 32px;
 }
 
 .navbar {
