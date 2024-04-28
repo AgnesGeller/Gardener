@@ -89,11 +89,35 @@ section {
     background: linear-gradient(to right,#00e0fe, #1107fe);
     margin: 16px auto;
 }
+/* Szolgáltatások Dropdown stílusok */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    color: #1107fe;
+    top: 0;
+    left: 100%;
+    margin-top: -5px;
+}
+.navbar .dropdown-menu {
+    z-index: 1050; /* Higher than the overlay and section */
+}
+
+
+/* Megjelenítés hover esetén asztali nézetben */
+@media (min-width: 992px) {
+    .navbar .dropdown-menu .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+        z-index: 0;
+        visibility: visible;
+        border-radius: 0;
+    }
+}
 
 .service .service-img {
     position: relative;
 }
-
 footer {
     background: linear-gradient(to right,#00e0fe, #1107fe);
     color: #fff;
@@ -106,7 +130,6 @@ footer a {
 .mb-0 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 
 
 
